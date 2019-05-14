@@ -1,8 +1,6 @@
 #encoding: utf-8
 
-#二维数组查找
-from random import randint
-
+#鏇挎崲绌烘牸
 def replce20(s):
     cnt=0
     for i in s:
@@ -21,6 +19,6 @@ def replce20(s):
         else:
             s[i+cnt*2]=s[i]
 
-    print s
+    return "".join(s)
 
 replce20("fa f'awejf fjale fa faje")

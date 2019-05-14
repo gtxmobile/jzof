@@ -15,12 +15,12 @@ def pushpop(a,b):
                 print "push ",a[i]
                 i+=1
             except:
-                print False
-                return
+                return False
+
     if i==j:
-        print True
+        return True
     else:
-        print False
+        return False
 
 a=[randint(0,4) for i in range(5)]
 b=[randint(0,4) for j in range(5)]

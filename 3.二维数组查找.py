@@ -1,6 +1,6 @@
 #encoding: utf-8
 
-#二维数组查找
+#浜岀淮鏁扮粍鏌ユ壘
 from random import randint
 def find2d(a,x):
     rowlen=len(a[0])

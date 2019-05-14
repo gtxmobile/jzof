@@ -1,11 +1,14 @@
 #encoding: utf-8
 
-#¶şÎ¬Êı×é²éÕÒ
-from random import randint
-
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+#é‡å»ºäºŒå‰æ ‘
 def restoreBinTree(preorder,inorder):
     for i in range(len(inorder)):
         if preorder[0]==inorder[i]:
-            r=treeNode(preorder[0])
+            r=TreeNode(preorder[0])
             r.l=restoreBinTree(preorder[1:i],inorder[0:i-1])
             r.r=restoreBinTree(preorder[i+1::],inorder[i+1::])
